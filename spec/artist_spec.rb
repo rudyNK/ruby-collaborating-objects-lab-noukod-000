@@ -23,7 +23,7 @@ describe 'Artist' do
       expect(artist)
       expect(artist.songs).to eq([song_one, song_two])
     end
-    
+
     it 'does not store songs as an instance variable' do
       song_one = Song.new("Rock With You").save
       song_two = Song.new("Smooth Criminal").save
